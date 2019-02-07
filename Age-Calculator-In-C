@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+int year = 2019;
+int byear, age;
+
+int main(int argc, char *argv[]) {
+	
+	printf("Enter date of Birth: \n");
+	scanf("%d",&byear);
+	
+	age = year - byear;
+	printf("\nYou are: %d",age ,"years");
+	
+	if(age>=18 && age <=40){
+		printf("\nWelcome Team Youth");
+	}
+	else{
+		printf("\nYo are EITHER too young OR too old ");
+	}
+	return 0;
+}
